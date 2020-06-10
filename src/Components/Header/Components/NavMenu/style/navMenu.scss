@@ -1,0 +1,14 @@
+.navElement {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 7px 11px;
+  color: #404041;
+}
+.active {
+  border-bottom: 1px solid #9cd3a8;
+}

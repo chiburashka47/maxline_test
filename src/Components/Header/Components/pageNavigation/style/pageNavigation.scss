@@ -1,0 +1,26 @@
+.pageNavElement {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 15px;
+  color: #404041;
+  padding-right: 19px;
+  display: flex;
+
+  .pageNavImgContainer {
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-right: 9px;
+
+    .pageNavImg {
+      width: 12px;
+      height: 11px;
+      padding-top: 3px;
+    }
+  }
+}
+.bolder {
+  font-weight: 400;
+}
