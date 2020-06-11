@@ -1,0 +1,33 @@
+.gamesBannerContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  .gamesBannerBg {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 168px;
+  }
+
+  .gamesBannerMenu {
+    display: table;
+    width: 100%;
+    height: 30px;
+
+    .gamesBannerMenuElem {
+      display: table-cell;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      padding-top: 7px;
+    }
+
+    .active {
+      background-color: #9cd3a8;
+      border-bottom: 1px solid #129a48;
+    }
+  }
+}

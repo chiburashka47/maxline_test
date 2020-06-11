@@ -1,0 +1,21 @@
+.commercialBannerContainer {
+  width: 100%;
+  height: 210px;
+  position: relative;
+  margin-bottom: 10px;
+  .commercialBannerimg {
+    width: 100%;
+    height: 210px;
+  }
+  .commercialBannerText {
+    position: absolute;
+    width: 90%;
+    bottom: 10px;
+    left: 11px;
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}

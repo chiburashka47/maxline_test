@@ -1,0 +1,52 @@
+.listMenuContainer {
+  width: 100%;
+  height: 27px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  border-bottom: 1px solid;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1px;
+  position: relative;
+
+  .listMenuImg {
+    padding: 0 8px 0px 6px;
+  }
+
+  .listMenuTextSport {
+    font-size: 14px;
+    line-height: 16px;
+    padding-bottom: 3px;
+  }
+
+  .listMenuText {
+    padding-bottom: 6px;
+  }
+}
+
+.arrowContainer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-left: 1px solid;
+  width: 27px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sport {
+  background-color: #e5f9e0;
+  border-color: #9cd3a8;
+}
+.country {
+  background-color: #f6f6f6;
+  border-color: #a3a3a3;
+}
+.gender {
+  background-color: #fcfcfc;
+  border-color: #dcdcdc;
+}
