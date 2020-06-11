@@ -1,7 +1,6 @@
 .commercialContainer {
-  width: 390px;
-  padding-left: 10px;
-  display: table-cell;
+  min-width: 390px;
+  padding: 10px 0 0 10px;
 }
 
 .commercialBonus {
@@ -15,6 +14,7 @@
     background: url("./bonusBg.png");
     background-repeat: no-repeat;
     background-size: contain;
+    padding-bottom: 10px;
   }
 
   .switchContainer {
