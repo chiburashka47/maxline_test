@@ -1,3 +1,8 @@
+@mixin textCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .mainPageContainer {
   width: 100%;
   display: flex;
@@ -12,5 +17,71 @@
     padding: 10px 0;
     display: flex;
     align-items: center;
+  }
+
+  .mainPageEvent {
+    display: flex;
+    flex-direction: column;
+
+    .EventTitle {
+      height: 30px;
+      display: flex;
+      background-color: #0a9f30;
+      align-items: center;
+      margin-bottom: 10px;
+
+      .EventTitleImg {
+        padding: 2px 0 0 13px;
+      }
+
+      .EventTitleText {
+        color: white;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 18px;
+        padding-left: 10px;
+        letter-spacing: -0.2px;
+      }
+    }
+
+    .eventTable {
+      width: 100%;
+      display: table;
+      .eventNameColumn {
+        display: table-cell;
+        box-sizing: border-box;
+
+        .eventName {
+          background-color: #f7f7f7;
+          height: 30px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 15px;
+          display: flex;
+          align-items: center;
+          padding-left: 72px;
+          letter-spacing: -0.2px;
+        }
+      }
+
+      .eventFilterColumn {
+        display: table-cell;
+        box-sizing: border-box;
+        width: 6.25%;
+
+        .eventFilter {
+          background-color: #f7f7f7;
+          height: 30px;
+          border-left: 1px solid #ececec;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 23px;
+          text-decoration-line: underline;
+          @include textCenter();
+        }
+      }
+    }
   }
 }
