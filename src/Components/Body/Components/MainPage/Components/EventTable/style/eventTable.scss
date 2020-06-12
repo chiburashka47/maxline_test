@@ -1,0 +1,273 @@
+@mixin textCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eventTable {
+  width: 100%;
+  display: table;
+  .eventNameColumn {
+    display: table-cell;
+    box-sizing: border-box;
+
+    .eventName {
+      background-color: #f7f7f7;
+      height: 30px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      padding-left: 72px;
+      letter-spacing: -0.2px;
+    }
+
+    .eventNameElementFirst {
+      height: 80px;
+      border-bottom: 1px solid #ececec;
+      display: flex;
+
+      .eventNameElementTop {
+        .eventNameImgContainer {
+          border-right: 1px solid #ececec;
+          padding-right: 10px;
+          margin-top: 5px;
+          padding-left: 10px;
+          height: 50px;
+
+          .eventNameImgContainerRow {
+            justify-content: space-between;
+            width: 39px;
+            padding-bottom: 5px;
+          }
+        }
+        .eventNameTeamNames {
+          width: 100%;
+          justify-content: space-between;
+
+          .eventNameTeamNamesContainer {
+            margin-left: 10px;
+            padding-top: 2px;
+
+            .eventNameTeamNameText {
+              font-style: normal;
+              font-weight: 500;
+              font-size: 14px;
+              padding-bottom: 4px;
+            }
+          }
+          .eventNameTeamNameImg {
+            padding: 9px 18px 0 0;
+          }
+        }
+      }
+      .eventNameElementBottom {
+        align-items: flex-start;
+
+        .eventNameMatchTime {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 14px;
+          padding-left: 13px;
+        }
+        .eventNameGoals {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 11px;
+          color: #ff0000;
+          margin-left: 20px;
+          letter-spacing: -0.2px;
+        }
+        .eventNameTime {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          color: #51bf7d;
+          margin-left: auto;
+          padding-right: 15px;
+          margin-top: -3px;
+        }
+        .eventNameCoef {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 13px;
+          padding-right: 11px;
+          margin-top: -3px;
+        }
+      }
+    }
+
+    .eventNameElement {
+      min-height: 50.5px;
+      border-bottom: 1px solid #ececec;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 10px;
+      letter-spacing: -0.3px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+    }
+    .borderBottomGreen {
+      border-bottom: 1px solid #129a48;
+    }
+  }
+
+  .eventFilterColumn {
+    display: table-cell;
+    box-sizing: border-box;
+    width: 6.25%;
+
+    .eventFilter {
+      background-color: #f7f7f7;
+      height: 30px;
+      border-left: 1px solid #ececec;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 23px;
+      text-decoration-line: underline;
+      @include textCenter();
+    }
+
+    .eventFilterElementContainer {
+      flex-direction: column;
+      @include textCenter();
+
+      .filterElement {
+        min-height: 50.5px;
+        width: 100%;
+
+        border-bottom: 1px solid #ececec;
+        border-left: 1px solid #ececec;
+        @include textCenter();
+        flex-direction: column;
+
+        .filterElementCoef {
+          font-style: normal;
+          font-size: 14px;
+          line-height: 18px;
+          font-weight: 500;
+          @include textCenter();
+        }
+
+        .underlineCoef {
+          color: #222222;
+          text-decoration-line: underline;
+          font-weight: bold;
+        }
+
+        .greenCoef {
+          color: #129a48;
+        }
+
+        .redCoef {
+          color: #bf010e;
+        }
+
+        .greenArrow {
+          margin-top: -6px;
+          @include textCenter();
+        }
+        .redArrow {
+          margin-top: 2px;
+          @include textCenter();
+        }
+
+        .filterElementDifference {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 10px;
+          line-height: 120%;
+          @include textCenter();
+        }
+      }
+
+      .firstElem {
+        height: 79px;
+      }
+      .lastElem {
+        border-bottom: 1px solid #129a48;
+      }
+    }
+  }
+}
+
+.tableFooter {
+  height: 21px;
+  background-color: #f6f6f6;
+
+  .tableFooterWeather {
+    height: 21px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    margin-top: -3px;
+    letter-spacing: -0.3px;
+
+    .wheaterContainer {
+      padding: 0 5px 0 10px;
+
+      align-items: center;
+    }
+    .weatherTitle {
+      margin-right: 3px;
+    }
+    .weatherText {
+      font-size: 11px;
+      padding: 5px 0 0 10px;
+    }
+
+    .weatherImg {
+      padding: 3px 0 0 0;
+    }
+  }
+
+  .tableFooterInfo {
+    .footerInfoContainer {
+      padding-left: 198px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      letter-spacing: 0.2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+
+      @include textCenter();
+      .footerInfoText {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 15px;
+        text-decoration-line: underline;
+        padding-left: 10px;
+        height: 100%;
+        margin-top: 1px;
+      }
+
+      .footerInfoImg {
+        padding-left: 10px;
+        @include textCenter();
+        height: 100%;
+      }
+    }
+  }
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}

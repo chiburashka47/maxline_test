@@ -49,7 +49,7 @@ import stalica from "../style/img/stalica.png";
 import bvf from "../style/img/bvf.png";
 import energetic from "../style/img/energetic.png";
 import neman from "../style/img/neman.png";
-import sfc from "../style/img/arrowDownGreen.png";
+import sfc from "../style/img/sfc.png";
 import mmc from "../style/img/mmc.png";
 import youtube from "../style/img/youtube.png";
 import vk from "../style/img/vk.png";
