@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import "./style/mainPage.scss";
 import { getIcon } from "../../../../Services/PngDrawer";
 import EventTable from "./Components/EventTable/eventTable";
+import MatchTable from "./Components/matchTable/matchTable";
 
 export default class MainPage extends Component {
   constructor(props) {
     super(props);
-    this.filterList = ["1", "X", "2", "1X", "12", "X2", "Ф1", "Ф2", "М", "Б"];
     this.filter = [
       {
         name: "1",
@@ -60,6 +60,190 @@ export default class MainPage extends Component {
         thirdItem: { coef: "1.82", difference: "(6.0)" },
       },
     ];
+
+    this.tableData = [
+      {
+        name: "Форы",
+        lines: [
+          [
+            { elemKey: "Меньше(84.5)", elemValue: "1.154" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+          ],
+          [
+            { elemKey: "Меньше(87.8)", elemValue: "1.174" },
+            { elemKey: "Меньше(80.5)", elemValue: "1.134" },
+          ],
+        ],
+      },
+      {
+        name: "Тоталы",
+        lines: [
+          [
+            { elemKey: "Меньше(84.5)", elemValue: "1.154" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+          ],
+          [
+            { elemKey: "Меньше(87.8)", elemValue: "1.174" },
+            { elemKey: "Меньше(80.5)", elemValue: "1.134" },
+          ],
+        ],
+      },
+      {
+        name: "Индивидуальный тотал",
+        lines: [
+          [
+            { elemKey: "Меньше(84.5)" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.154" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+          ],
+          [
+            { elemKey: "Меньше(84.5)" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.154" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+          ],
+          [
+            { elemKey: "Ничья и тотал" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.154" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+          ],
+        ],
+      },
+      {
+        name: "Индивидуальный тотал",
+        lines: [
+          [
+            { elemKey: "Меньше(84.5)" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.154" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+          ],
+          [
+            { elemKey: "Меньше(84.5)" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.154" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+          ],
+          [
+            { elemKey: "Меньше(84.5)" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.154" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+          ],
+        ],
+      },
+      {
+        name: "Индивидуальный тотал",
+        lines: [
+          [
+            { elemKey: "Ничья и тотал" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.154" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+          ],
+          [
+            { elemKey: "Ничья и тотал", elemKey2: "если в 2 строки" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.154" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+          ],
+          [
+            { elemKey: "Ничья и тотал" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.154" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+          ],
+        ],
+      },
+      {
+        name: "Индивидуальный тотал",
+        lines: [
+          [
+            { elemKey: "Ничья и тотал" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.154" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+          ],
+          [
+            { elemKey: "Ничья и тотал" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.154" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+          ],
+          [
+            { elemKey: "Ничья и тотал" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.154" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+          ],
+        ],
+      },
+      {
+        name: "Индивидуальный тотал",
+        lines: [
+          [
+            { elemKey: "Ничья и тотал" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.154" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+          ],
+          [
+            { elemKey: "Ничья и тотал" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.154" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+          ],
+          [
+            { elemKey: "Ничья и тотал" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.154" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+          ],
+        ],
+      },
+      {
+        name: "Индивидуальный тотал",
+        lines: [
+          [
+            { elemKey: "Ничья и тотал" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.154" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+          ],
+          [
+            { elemKey: "Ничья и тотал", elemKey2: "если в 2 строки" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.154" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+            { elemKey: "Меньше(82.5)", elemValue: "1.174" },
+          ],
+        ],
+      },
+    ];
   }
   render() {
     return (
@@ -77,8 +261,7 @@ export default class MainPage extends Component {
 
           <EventTable filterList={this.filter} />
         </div>
-        <div className="mainPageNews"></div>
-        <div className="mainPageMenu"></div>
+        <MatchTable data={this.tableData} />
       </div>
     );
   }

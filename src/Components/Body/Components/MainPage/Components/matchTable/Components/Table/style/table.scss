@@ -1,0 +1,93 @@
+.matchTable {
+  display: flex;
+  flex-direction: column;
+
+  .matchTableTitle {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    box-sizing: border-box;
+    background-color: #ececec;
+    border-top: 1px solid #a3a3a3;
+    border-bottom: 1px solid #a3a3a3;
+
+    .matchTableTitleImg {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 9px 0 10px;
+    }
+    .matchTableTitleText {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 23px;
+      color: #222222;
+    }
+  }
+
+  .matchTableLineContainer {
+    display: flex;
+    flex-direction: column;
+
+    .matchTableLine {
+      display: flex;
+      border-bottom: 1px solid #ececec;
+
+      .matchTableElem {
+        flex-grow: 1;
+        min-height: 30px;
+        border-right: 1px solid #ececec;
+        box-sizing: border-box;
+        letter-spacing: 0.2px;
+
+        .matchTableElemDual {
+          display: flex;
+          justify-content: space-between;
+          min-height: 100%;
+          align-items: center;
+          padding: 0 10px;
+
+          .matchTableElemKey {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            color: #222222;
+          }
+
+          .matchTableElemValue {
+            text-decoration-line: underline;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+          }
+        }
+
+        .matchTableElemSolo {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          min-height: 30px;
+          align-items: center;
+
+          .matchTableElemKey {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            color: #222222;
+            width: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+      :last-child {
+        border-right: none;
+      }
+    }
+    :last-child {
+      border-bottom: none;
+    }
+  }
+}

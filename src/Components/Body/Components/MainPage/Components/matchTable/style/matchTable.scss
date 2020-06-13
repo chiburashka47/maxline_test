@@ -1,0 +1,43 @@
+.matchTableContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  .matchTableMenu {
+    display: flex;
+    height: 31px;
+    box-sizing: border-box;
+    background-color: #ececec;
+    border-top: 1px solid #a3a3a3;
+
+    .matchTableMenuElem {
+      width: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      border-right: 1px solid #a3a3a3;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 13px;
+      line-height: 21px;
+      color: #474747;
+    }
+
+    .active {
+      background-color: #129a48;
+      border-bottom: #129a48;
+      color: white;
+    }
+
+    :last-child {
+      border-right: none;
+    }
+  }
+
+  .tableFooter {
+    height: 10px;
+    background-color: #ececec;
+    border-bottom: 1px solid #a3a3a3;
+    border-top: 1px solid #a3a3a3;
+  }
+}

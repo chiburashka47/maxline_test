@@ -1,0 +1,13 @@
+.footer {
+  height: 642px;
+  background-color: #f6f6f6;
+  margin-top: 19px;
+  align-items: center;
+  padding-top: 25px;
+
+  .footerInfoRow {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+}
