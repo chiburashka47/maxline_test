@@ -202,6 +202,7 @@
 .tableFooter {
   height: 21px;
   background-color: #f6f6f6;
+  position: relative;
 
   .tableFooterWeather {
     height: 21px;
@@ -234,8 +235,12 @@
   }
 
   .tableFooterInfo {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+
     .footerInfoContainer {
-      padding-left: 198px;
       display: flex;
       align-items: center;
       justify-content: center;

@@ -45,7 +45,7 @@ import skale from "../style/img/skale.png";
 import greenRectangle from "../style/img/greenRectangle.png";
 import redRectangle from "../style/img/redRectangle.png";
 import square from "../style/img/square.png";
-import stalica from "../style/img/stalica.png";
+import stalica from "../style/img/stalica.svg";
 import bvf from "../style/img/bvf.png";
 import energetic from "../style/img/energetic.png";
 import neman from "../style/img/neman.png";
@@ -290,179 +290,67 @@ export const getIcon = (iconName, width, height) => {
         <img src={tress} style={{ width: "16px", height: "16px" }} alt=" " />
       );
     case "maxLine":
-      return (
-        <img
-          src={maxLine}
-          style={{ width: "35.8px", height: "47.3px" }}
-          alt=" "
-        />
-      );
+      return <img src={maxLine} alt=" " />;
     case "bamf":
-      return (
-        <img src={bamf} style={{ width: "48.4px", height: "49.3px" }} alt=" " />
-      );
+      return <img src={bamf} alt=" " />;
     case "tsmoki":
-      return (
-        <img
-          src={tsmoki}
-          style={{ width: "42.8px", height: "44.8px" }}
-          alt=" "
-        />
-      );
+      return <img src={tsmoki} alt=" " />;
     case "square":
-      return (
-        <img src={square} style={{ width: "14px", height: "14px" }} alt=" " />
-      );
+      return <img src={square} alt=" " />;
     case "stalica":
-      return (
-        <img
-          src={stalica}
-          style={{ width: "48px", height: "46.8px" }}
-          alt=" "
-        />
-      );
+      return <img src={stalica} alt=" " />;
+
     case "bvf":
-      return (
-        <img src={bvf} style={{ width: "68.5px", height: "44.3px" }} alt=" " />
-      );
+      return <img src={bvf} alt=" " />;
+
     case "energetic":
-      return (
-        <img
-          src={energetic}
-          style={{ width: "25.4px", height: "55.1px" }}
-          alt=" "
-        />
-      );
+      return <img src={energetic} alt=" " />;
     case "neman":
-      return (
-        <img
-          src={neman}
-          style={{ width: "37.6px", height: "47.8px" }}
-          alt=" "
-        />
-      );
+      return <img src={neman} alt=" " />;
     case "sfc":
-      return (
-        <img src={sfc} style={{ width: "40.2px", height: "47.6px" }} alt=" " />
-      );
+      return <img src={sfc} alt=" " />;
     case "mmc":
-      return (
-        <img src={mmc} style={{ width: "66.3px", height: "32px" }} alt=" " />
-      );
+      return <img src={mmc} alt=" " />;
     case "youtube":
-      return (
-        <img
-          src={youtube}
-          style={{ width: "14.6px", height: "14.6px" }}
-          alt=" "
-        />
-      );
+      return <img src={youtube} alt=" " />;
     case "vk":
-      return (
-        <img src={vk} style={{ width: "14.6px", height: "14.6px" }} alt=" " />
-      );
+      return <img src={vk} alt=" " />;
     case "twitter":
-      return (
-        <img
-          src={twitter}
-          style={{ width: "14.6px", height: "14.6px" }}
-          alt=" "
-        />
-      );
+      return <img src={twitter} alt=" " />;
     case "instagram":
-      return (
-        <img
-          src={instagram}
-          style={{ width: "14.6px", height: "14.6px" }}
-          alt=" "
-        />
-      );
+      return <img src={instagram} alt=" " />;
     case "facebook":
-      return (
-        <img
-          src={facebook}
-          style={{ width: "14.6px", height: "14.6px" }}
-          alt=" "
-        />
-      );
+      return <img src={facebook} alt=" " />;
     case "odnokasniki":
-      return (
-        <img
-          src={odnokasniki}
-          style={{ width: "8.62", height: "14.6px" }}
-          alt=" "
-        />
-      );
+      return <img src={odnokasniki} alt=" " />;
     case "logo21":
-      return (
-        <img src={logo21} style={{ width: "21px", height: "17.5px" }} alt=" " />
-      );
+      return <img src={logo21} alt=" " />;
     case "ipay":
-      return (
-        <img src={ipay} style={{ width: "14px", height: "14px" }} alt=" " />
-      );
+      return <img src={ipay} alt=" " />;
     case "masterCard":
-      return (
-        <img
-          src={masterCard}
-          style={{ width: "17.4px", height: "10.8px" }}
-          alt=" "
-        />
-      );
+      return <img src={masterCard} alt=" " />;
     case "visa":
-      return (
-        <img src={visa} style={{ width: "18.2px", height: "11.2px" }} alt=" " />
-      );
+      return <img src={visa} alt=" " />;
     case "erip":
-      return (
-        <img src={erip} style={{ width: "16px", height: "16px" }} alt=" " />
-      );
+      return <img src={erip} alt=" " />;
     case "belarusBank":
-      return (
-        <img
-          src={belarusBank}
-          style={{ width: "15.4px", height: "15.4px" }}
-          alt=" "
-        />
-      );
+      return <img src={belarusBank} alt=" " />;
     case "belPost":
-      return (
-        <img src={belPost} style={{ width: "16px", height: "16px" }} alt=" " />
-      );
+      return <img src={belPost} alt=" " />;
     case "greenCompany":
-      return (
-        <img
-          src={greenCompany}
-          style={{ width: "15.4px", height: "10px" }}
-          alt=" "
-        />
-      );
+      return <img src={greenCompany} alt=" " />;
     case "qiwi":
-      return (
-        <img src={qiwi} style={{ width: "14.6px", height: "14.6px" }} alt=" " />
-      );
+      return <img src={qiwi} alt=" " />;
     case "aGroup":
-      return (
-        <img
-          src={aGroup}
-          style={{ width: "14.5px", height: "11.7px" }}
-          alt=" "
-        />
-      );
+      return <img src={aGroup} alt=" " />;
     case "svyaznoy":
-      return (
-        <img src={svyaznoy} style={{ width: "52px", height: "12px" }} alt=" " />
-      );
+      return <img src={svyaznoy} alt=" " />;
     case "euroset":
-      return (
-        <img src={euroset} style={{ width: "50px", height: "8px" }} alt=" " />
-      );
+      return <img src={euroset} alt=" " />;
     case "ml":
-      return <img src={ml} style={{ width: "20px", height: "20px" }} alt=" " />;
+      return <img src={ml} alt=" " />;
     case "stamp":
-      return (
-        <img src={stamp} style={{ width: "54px", height: "54.7px" }} alt=" " />
-      );
+      return <img src={stamp} alt=" " />;
     case "footballWhite":
       return (
         <img

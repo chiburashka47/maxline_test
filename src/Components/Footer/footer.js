@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import "./style/footer.scss";
 import FooterFaq from "./Components/FooterFaq/footerFaq";
+import { getIcon } from "../../Services/PngDrawer";
+import Logo from "../Header/Components/Logo/logo";
+import ImgDrawer from "./Components/ImgDrawer/imgDrawer";
 
 export default class Footer extends Component {
   constructor(props) {
@@ -47,6 +50,50 @@ export default class Footer extends Component {
       title: "TV Игры",
       desc: ["BetGames", "TVBet", "GoldenRace"],
     };
+
+    this.footerPartnersImg = {
+      className: "footerPartnersImg",
+      imgList: [
+        "maxLine",
+        "bamf",
+        "tsmoki",
+        "stalica",
+        "bvf",
+        "energetic",
+        "neman",
+        "sfc",
+        "mmc",
+      ],
+    };
+    this.footerContactsImg = {
+      className: "footerContactsImg",
+      imgList: [
+        "youtube",
+        "vk",
+        "twitter",
+        "instagram",
+        "facebook",
+        "odnokasniki",
+      ],
+    };
+    this.footerPartnerSmallImg = {
+      className: "footerPartnerSmallImg",
+      imgList: [
+        "logo21",
+        "ipay",
+        "masterCard",
+        "visa",
+        "erip",
+        "belarusBank",
+        "belPost",
+        "greenCompany",
+        "qiwi",
+        "aGroup",
+        "svyaznoy",
+        "euroset",
+        "ml",
+      ],
+    };
   }
   render() {
     return (
@@ -62,9 +109,25 @@ export default class Footer extends Component {
           <FooterFaq data={this.faqGames} />
         </div>
 
-        <div className="footerPartners"></div>
-        <div className="footerContacts"></div>
-        <div className="footerPartnerSmall"></div>
+        <div className="footerPartners">
+          <ImgDrawer data={this.footerPartnersImg} />
+        </div>
+        <div className="footerContacts">
+          <div className="footerLogo">
+            <Logo />
+          </div>
+          <div className="footerContactsText">
+            © <p className="footerContactsTextYear">2019</p> Букмекерская
+            компания Maxline Все права защищены.
+          </div>
+          <div className="footerContactsImgContainer">
+            <ImgDrawer data={this.footerContactsImg} />
+          </div>
+        </div>
+        <div className="footerPartnerSmall">
+          <ImgDrawer data={this.footerPartnerSmallImg} />
+          <div className="footerPartnerSmallImgStamp">{getIcon("stamp")}</div>
+        </div>
       </div>
     );
   }
