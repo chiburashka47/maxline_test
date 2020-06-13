@@ -33,6 +33,7 @@
     .matchTableLine {
       display: flex;
       border-bottom: 1px solid #ececec;
+      flex-wrap: wrap;
 
       .matchTableElem {
         flex-grow: 1;
